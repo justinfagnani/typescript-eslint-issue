@@ -1,0 +1,10 @@
+/node_modules/
+/.wireit/
+/lib/
+/rules/
+/test/
+
+index.js
+index.js.map
+index.d.ts
+index.d.ts.map

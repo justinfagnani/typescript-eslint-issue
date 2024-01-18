@@ -1,0 +1,50 @@
+{
+  "name": "ts-eslint-starter",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "wireit",
+    "test": "wireit"
+  },
+  "wireit": {
+    "build": {
+      "command": "tsc --build --pretty",
+      "files": [
+        "src/**/*.ts",
+        "tsconfig.json"
+      ],
+      "output": [
+        "lib",
+        "test",
+        "index.{js,js.map,d.ts,d.ts.map}",
+        "tsconfig.tsbuildinfo"
+      ],
+      "clean": "if-file-deleted"
+    },
+    "test": {
+      "command": "node --enable-source-maps --test-reporter=spec --test test/**/*_test.js",
+      "dependencies": [
+        "build"
+      ],
+      "files": [],
+      "output": []
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.11.5",
+    "@typescript-eslint/parser": "^6.19.0",
+    "@typescript-eslint/rule-tester": "^6.19.0",
+    "typescript": "^5.3.3",
+    "wireit": "^0.14.3"
+  },
+  "dependencies": {
+    "@types/eslint": "^8.56.2",
+    "@typescript-eslint/utils": "^6.19.0",
+    "eslint": "^8.56.0"
+  }
+}
