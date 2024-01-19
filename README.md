@@ -60,7 +60,7 @@ The error when running the tests is:
 
 ## Workaround
 
-The parsing error can be solved by layout the filesystem like:
+The parsing error can be solved by laying out the filesystem like:
 
 ```
 fixture
