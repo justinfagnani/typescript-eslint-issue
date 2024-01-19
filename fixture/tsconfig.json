@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
-    "strict": true
+    "strict": true,
+    "rootDir": "."
   },
-  "include": ["fixture/file.ts", "fixture/react.tsx"]
+  "include": ["file.ts", "react.tsx"]
 }

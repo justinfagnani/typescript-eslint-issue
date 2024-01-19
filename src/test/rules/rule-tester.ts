@@ -7,12 +7,8 @@
 import {RuleTester} from '@typescript-eslint/rule-tester';
 import {describe as suite, test} from 'node:test';
 
-RuleTester.afterAll = () => {
-  console.log('All tests passed!');
-};
-
+RuleTester.afterAll = () => {};
 RuleTester.describe = suite;
-
 RuleTester.it = test;
 
 export const ruleTester = new RuleTester({
